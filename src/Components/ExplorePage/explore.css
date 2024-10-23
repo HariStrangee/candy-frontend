@@ -1,0 +1,201 @@
+.explore-main-conainer {
+  background-color: white;
+  height: 115rem;
+  width: 100%;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.explore-image-conainer {
+  height: 40rem;
+  min-width: 100vw;
+  flex-grow: 1;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+/* .bg-explore-img-1 {
+  background-image: url("https://res.cloudinary.com/dipqsr0fw/image/upload/v1729165964/jar-with-winegums-candy-drops_miq62o.jpg");
+} */
+.bg-explore-img-2 {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  background-position: top;
+  background-image: url("https://res.cloudinary.com/dipqsr0fw/image/upload/v1729242589/Colorful_spiral_lollipops_on_colorfu_stock_photo_containing_lolipop_and_qkzhid.jpg");
+}
+.bg-explore-img-3 {
+  background-image: url("https://res.cloudinary.com/dipqsr0fw/image/upload/v1729228640/Pngtree_cartoon_festival_new_year_chinese_4119584_poctus.jpg");
+  padding: 25px;
+}
+.bg-explore-img-4 {
+  background-image: url("https://res.cloudinary.com/dipqsr0fw/image/upload/v1729228478/Pngtree_christmas_candy_border_17286426_n90skl.png");
+  background-size: contain;
+  background-position: right;
+}
+
+.diwali-head {
+  color: rgba(212, 10, 10, 0.779);
+  font-size: 39px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  -webkit-text-stroke: 0.3px crimson;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  animation: slide-up 1s ease-out;
+}
+.diwali-desx {
+  color: rgb(255, 0, 51);
+  font-size: 15px;
+  text-align: center;
+  -webkit-text-stroke: 0.2px green;
+  font-family: cursive;
+  width: 650px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  animation: slide-up 1s ease-out;
+}
+.shop-now-btn {
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  color: blanchedalmond;
+  border-radius: 12px;
+  animation: slide-up  1s ease-out;
+}
+.shop-now-btn:hover {
+  filter: drop-shadow(1px 1px 8px rgb(255, 6, 6));
+}
+
+.xmas-head {
+  color: green;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  width: 650px;
+  font-size: 45px;
+  animation: slide-up 1s ease-in;
+}
+.xmas-desx {
+  color: crimson;
+  width: 700px;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: slide-up  1s ease-in;
+}
+.xmas-btn {
+  color: white;
+  padding: 10px;
+  width: 120px;
+  background-image: linear-gradient(to left, green, red, pink);
+  border: none;
+  animation: slide-up 1s ease-in;
+}
+.xmas-btn:hover {
+  background-image: linear-gradient(to right, green, red, pink);
+  filter: drop-shadow(1px 1px 4px #bfbfbf);
+  border: none;
+}
+.bday-head {
+  color: white;
+  font-size: 40px;
+  width: 600px;
+  -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+  text-align:right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  animation: slide-up 1s ease-in;
+}
+.bday-desx {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 550px;
+  text-align: right;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+  font-weight: bold;
+  animation: slide-up  1s ease-in;
+}
+.bday-btn {
+  color: gold;
+  height: 40px;
+  width: 100px;
+  border-radius: 7px;
+  background-color: white;
+  font-weight: bold;
+  animation: slide-up 1s ease-in;
+}
+.bday-btn:hover {
+  box-shadow: 1px 1px 12px lightgreen;
+}
+@media screen and (max-width: 767px) {
+  .diwali-head {
+    font-size: 22px;
+  }
+  .bg-explore-img-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-explore-img-4{
+   background-image: url("https://res.cloudinary.com/dipqsr0fw/image/upload/v1729493258/download_1_erw6t2.jpg");
+   background-size: cover;
+   padding: 10px;
+  }
+  .diwali-desx {
+    font-size: 12px;
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .bday-head {
+    width: 300px;
+    font-size: 29px;
+    text-align: center;
+  }
+  .bday-desx {
+    width: 300px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .xmas-head {
+    font-size: 29px;
+    width: 300px;
+    z-index: 1;
+    color:gold;
+  }
+  .xmas-desx {
+    font-size: 15px;
+    width: 250px;
+    z-index: 1;
+    color: white;
+  }
+  .xmas-btn {
+    padding: 5px;
+    z-index:1;
+    width: 90px;
+    background-image: linear-gradient(to right,gold,white);
+    color:white;
+    -webkit-text-stroke: green 0.4px;
+    font-weight: bold;
+  }
+}

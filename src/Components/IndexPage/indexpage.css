@@ -1,0 +1,94 @@
+.index-container {
+  background-image: url("https://res.cloudinary.com/dipqsr0fw/image/upload/v1729079876/AdobeStock_631101526_Preview_omhfps.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  
+  background-color: black;
+  width: 100vw;
+  position:absolute;
+  background-position: center;
+}
+.bg-container{
+    min-height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(3.8px);
+}
+
+@keyframes slideleft {
+    from{
+        transform: translateX(-450px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.animation-container{
+    animation-name: slideleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    margin-top: 20px;
+}
+.welcome-head{
+    color: rgb(220, 11, 140);
+    font-size: 45px;
+    font-family: Papyrus, fantasy;
+    font-weight: bold;
+    text-align: center;
+
+    
+}
+.candy-quote{
+    font-family: candy-quote;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.shop-button{
+    background-color: rgb(82, 234, 27);
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    margin: 20px;
+    font-family:roboto;
+    font-weight: bold;
+    border: 1px solid white;
+    outline: none;
+    background-image: linear-gradient(to right,rgb(220, 11, 140),skyblue,beige);
+
+
+   
+}
+.explore-button{
+    background-color: transparent;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid white;
+    font-family: roboto;
+    background-image: linear-gradient(to right,rgb(220, 11, 140),beige);
+    font-weight: bold;
+}
+.shop-button:hover{
+    filter:drop-shadow(1px 1px 8px white);
+    background-image: linear-gradient(to right,Skyblue,beige);
+    border: 1px solid white;
+    color: rgb(220, 11, 140); 
+    transition-duration: 1s;
+}
+.explore-button:hover{
+    filter:drop-shadow(1px 1px 8px white);
+    background-image: linear-gradient(to right,Skyblue,beige);
+    border: 1px solid white;
+    color: rgb(220, 11, 140); 
+    transition-duration: 1s;
+}

@@ -1,0 +1,75 @@
+.product-card{
+    background-color: white;
+    box-shadow: 1px 1px 12px #bfbfbf;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    transition: transform 0.2s;
+    animation:appear linear;
+    animation-timeline: view();
+    animation-range: entry 10%;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.product-card:hover{
+    transform: translateY(-10px) scale(1.05);
+}
+.prodcut-img{
+    height: 150px;
+    padding-bottom: 10px;
+    filter: drop-shadow(1px 1px 12px #bfbfbf);
+}
+.products-name{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.product-price{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.742);
+    font-size: 14px;
+}
+.buy-btn{
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.buy-btn:hover{
+    background-color: green;
+}
+@media screen and (max-width:567px) {
+    .product-card{
+        width: 120px;
+    }
+    .prodcut-img{
+        height: 110px;
+    }
+    .products-name{
+        font-size: 13px;
+    }
+    .product-price{
+        font-size: 12px;
+    }
+    .buy-btn{
+        height: 25px;
+        font-size: 12px;
+    }
+}
